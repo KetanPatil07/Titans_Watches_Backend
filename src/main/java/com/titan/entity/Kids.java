@@ -6,8 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Titan {
-
+public class Kids {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,20 +16,13 @@ public class Titan {
 	private String dis;
 	private String pprice;
 	private String photo;
-
-	public String getPhoto() {
-		return photo;
-	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public  String getName() {
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -48,19 +40,17 @@ public class Titan {
 	public void setPprice(String pprice) {
 		this.pprice = pprice;
 	}
-	@Override
-	public String toString() {
-		return "Titan [id=" + id + ", name=" + name + ", dis=" + dis + ", pprice=" + pprice + ", photo=" + photo + "]";
+	public String getPhoto() {
+		return photo;
 	}
-	public Titan(long id, String name, String dis, String pprice, String photo) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.dis = dis;
-		this.pprice = pprice;
+	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	public Titan() {
+	@Override
+	public String toString() {
+		return "Kids [id=" + id + ", name=" + name + ", dis=" + dis + ", pprice=" + pprice + ", photo=" + photo + "]";
+	}
+	public Kids() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

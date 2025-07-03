@@ -5,10 +5,9 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.titan.entity.Titan;
+import com.titan.entity.Kids;
 
 @Repository
-public interface TitanRepo extends JpaRepository<Titan, Long>{
-	Optional<Titan>findByName(String name);
+public interface KidsRepo extends JpaRepository<Kids, Long>{
+	Optional<Kids>findByName(String name);
 }
-

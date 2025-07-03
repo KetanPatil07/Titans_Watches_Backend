@@ -55,7 +55,7 @@ public class Titancontroler {
         return titanservice.findByName(name);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/deleteproduct/{id}")
     public void deleteById(@PathVariable Long id) {
         titanservice.delateById(id);
     }
